@@ -1,5 +1,4 @@
 Hello melody, your home is /home/melody, and your shell is /bin/bash
-/home/melody/Code/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
 
 /home/melody/Code/homework:
 00helloworld.py
