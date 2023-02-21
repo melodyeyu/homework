@@ -28,10 +28,10 @@ num_people = int(sys.argv[2])
 fact = 1
 fact2 = 1
 for i in range(1,num_people):
-    fact *= i
+	fact *= i
 
 for j in range(1, (num_people-2)):
-    fact2 *= j
+	fact2 *= j
 
 combinations = fact / (2*fact2)   
 """

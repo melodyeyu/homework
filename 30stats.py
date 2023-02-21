@@ -35,7 +35,7 @@ mean = sum(numbers)/count
 variance = 0.0
 
 for x in numbers:
-    variance += (x-mean)**2
+	variance += (x-mean)**2
 
 stddev = (variance/(count))**0.5
 
