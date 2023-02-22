@@ -39,11 +39,11 @@ threshold = 1.4
 #threshold = float(sys.argv[3])
 
 def entropy(probabilities):
-    entropy = 0.0
-    for p in probabilities:
-        if p > 0:
-            entropy -= p * math.log2(p)
-    return entropy
+	entropy = 0.0
+	for p in probabilities:
+		if p > 0:
+			entropy -= p * math.log2(p)
+	return entropy
 
 def probabilities(sequence):
 	l = len(sequence)
@@ -55,9 +55,9 @@ def probabilities(sequence):
 for defline, seq in mcb185.read_fasta(filename):
 	words = defline.split()
 	name = words[0]
-
+#tested w range(300) len(seq)-1
 finalsequence = ''
-for i in range(len(seq)-1):
+for i in range(300):
 	pbs = probabilities(seq[i:window+i-1])
 	if (entropy(pbs) < threshold):
 		finalsequence += 'N'

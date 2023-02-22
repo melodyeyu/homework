@@ -32,11 +32,11 @@ max = 0
 DNA = "";
 
 for i in range(numb_of_fragments-1):
-    fragments +=  [''.join(  random.choices("ACGT", k=10))]
+	fragments += [''.join(  random.choices("ACGT", k=10))]
 
 for i in range(numb_of_fragments-1):
-    # compare with n-1 fragments if there is a match
-    for j in range(i, (numb_of_fragments-1)):
-        if (fragments[i].substring(fragments[j])):
-            print ("join the two strings and assign to DNA")
+	# compare with n-1 fragments if there is a match
+	for j in range(i, (numb_of_fragments-1)):
+		if (fragments[i].substring(fragments[j])):
+			print ("join the two strings and assign to DNA")
 #print (fragments) 
