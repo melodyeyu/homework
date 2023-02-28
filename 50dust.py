@@ -82,7 +82,7 @@ for i in range(len(seq)-1):
 		finalsequence += seq[i]
 
 print(name)
-segments = [finalsequence[i:i+59] for i in  range(0, len(finalsequence), 60)]
+segments = [finalsequence[i:i+59] for i in range(0, len(finalsequence), 60)]
 
 for seg60 in segments:
 	print(seg60)
